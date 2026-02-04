@@ -1,5 +1,3 @@
-import './style.css'
-
 // Basic interaction script
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Workfern Landing Page Loaded');
