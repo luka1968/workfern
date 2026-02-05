@@ -30,4 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   reveals.forEach(reveal => revealOnScroll.observe(reveal));
+
+  // Waitlist button handler
+  const waitlistBtn = document.getElementById('waitlist-btn');
+  if (waitlistBtn) {
+    waitlistBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      alert('Coming Soon! Join our waitlist to be notified when we launch.');
+    });
+  }
 });
