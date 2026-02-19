@@ -1,6 +1,6 @@
 // Basic interaction script
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Workfern Landing Page Loaded');
+  console.log('Web Highlighter Landing Page Loaded');
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
