@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Workfern Studio</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .pricing-page-content {
+            padding: 8rem 0;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pricing-page-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .pricing-page-content .desc {
+            color: var(--text-muted);
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
+        }
+
+        .simple-pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .minimal-pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .minimal-pricing-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .minimal-pricing-card .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .minimal-pricing-card .frequency {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .minimal-pricing-card ul {
+            text-align: left;
+            margin-bottom: 2.5rem;
+            color: var(--text-muted);
+        }
+
+        .minimal-pricing-card li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .minimal-pricing-card li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .minimal-pricing-card .btn {
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            transition: all 0.2s ease;
+        }
+
+        .minimal-pricing-card.featured .btn {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="/logo.png" alt="Workfern" style="height: 40px; vertical-align: middle;"> Workfern
+            </a>
+            <div class="nav-links">
+                <a href="/#features">Features</a>
+                <a href="/pricing">Pricing</a>
+                <a href="/#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="pricing-page-content container">
+        <h1>Simple Pricing</h1>
+        <p class="desc">Clear, upfront, one-time payment for lifetime access.</p>
+        
+        <div class="simple-pricing-grid">
+            <div class="minimal-pricing-card">
+                <h2>Web Highlighter for Obsidian</h2>
+                <div class="price">$19</div>
+                <span class="frequency">One-time payment</span>
+                <ul>
+                    <li>Lifetime software access</li>
+                    <li>Unlimited exports</li>
+                    <li>Save highlighted contexts</li>
+                    <li>Standard support</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">Select Plan</a>
+            </div>
+            
+            <div class="minimal-pricing-card featured">
+                <h2>Workfern Subscription Recovery</h2>
+                <div class="price">$39</div>
+                <span class="frequency">One-time payment</span>
+                <ul>
+                    <li>Full recovery module</li>
+                    <li>Unlimited subscription tracking</li>
+                    <li>Seamless integrations</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn">Select Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="/#features">Features</a>
+                    <a href="/pricing">Pricing</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-of-service.html">Terms of Service</a>
+                    <a href="/refund-policy.html">Refund Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:support@workfern.com">support@workfern.com</a></p>
+                    <p>Address: No. 1, Xinghu Garden, Luohu District, Shenzhen, Guangdong Province, China. Postal Code: 518024</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Workfern Studio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
